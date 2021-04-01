@@ -77,14 +77,17 @@ html {
 body {
   font-family: "Commissioner", sans-serif;
   font-size: 1.6rem;
+  color: #7a7a7a;
   background: #fafafa;
-  position: relative;
-  padding-bottom: 50rem;
 }
 @media only screen and (max-width: 23.44em) {
   body {
     background-color: red;
   }
+}
+
+.container {
+  position: relative;
 }
 
 /* Box sizing rules */
@@ -171,6 +174,34 @@ select {
   display: none;
 }
 
+.btn {
+  background: #147b74;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.8rem;
+  width: 20rem;
+  border-radius: 5rem;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  color: #d8d8d8;
+  cursor: pointer;
+}
+
+.bookmark {
+  background: #f0f0f0;
+  color: #147b74;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 2.5rem;
+  width: 19rem;
+}
+.bookmark:hover {
+  color: #126e68;
+}
+
 .header {
   width: 100vw;
   height: 46vh;
@@ -195,15 +226,22 @@ select {
   margin-right: 8vw;
 }
 .header_box ul li {
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
+  margin: 0 2rem;
   color: #fafafa;
   font-size: 2rem;
   font-weight: 700;
+  border-radius: 10px;
   white-space: nowrap;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
+  background: linear-gradient(135deg, #147b74 50%, transparent 50%);
+  background-size: 0%;
+  background-repeat: no-repeat;
 }
 .header_box ul li:hover {
-  color: #147b74;
+  transform: scale(1.1);
+  background-size: 300%;
+  color: white;
   cursor: pointer;
 }
 
@@ -213,21 +251,65 @@ select {
   left: 50%;
   transform: translateX(-50%);
   width: 50vw;
-  padding: 2rem;
-  background-color: white;
-  box-shadow: 0 5px 15px 9px rgba(0, 0, 0, 0.07);
+  display: block;
+  background: rgba(0, 0, 0, 0);
 }
-.main_content:after {
-  content: "";
+.main_content > div:not(:last-child) {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.03);
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 0.4rem;
+  padding: 4rem;
+}
+.main_content .foot_box {
+  position: absolute;
+  left: 0;
+  bottom: -6rem;
+  height: 1rem;
+  width: 100%;
+}
+.main_content .title_box {
   position: relative;
-  height: 200rem;
-  background-color: red;
-  width: 50%;
 }
-
-body {
-  padding-bottom: 5rem;
-  overflow: scroll;
+.main_content .title_box > div:not(:first-child) {
+  margin-top: 2rem;
+}
+.main_content .title_box__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-bottom: 0;
+}
+.main_content .title_box__content {
+  text-align: center;
+}
+.main_content .title_box_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+}
+.main_content .title_box_options__bookmark {
+  position: relative;
+  height: 100%;
+}
+.main_content .title_box_options__bookmark .icon {
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: red;
+}
+.main_content .title_box__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=/styles.8206c151.css.map */

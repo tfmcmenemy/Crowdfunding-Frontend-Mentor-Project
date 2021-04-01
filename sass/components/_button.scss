@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.btn {
+	background: $dark-cyan;
+	color: $white;
+	font-weight: $font-weight-med;
+	text-align: center;
+	padding: 1.8rem;
+	width: 20rem;
+	border-radius: 5rem;
+	transition: 0.3s ease;
+	&:hover {
+		transform: translateY(-1px);
+		color: rgb(216, 216, 216);
+		cursor: pointer;
+	}
+}
+.bookmark {
+	background: $light-gray;
+	color: $dark-cyan;
+	font-weight: $font-weight-thick;
+	text-align: right;
+	padding-right: 2.5rem;
+	width: 19rem;
+
+	&:hover {
+		color: $dark-cyan-hover;
+	}
+}

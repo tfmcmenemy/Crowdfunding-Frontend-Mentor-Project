@@ -7,10 +7,13 @@ html {
 body {
 	font-family: $font-family;
 	font-size: $font-size;
+	color: $dark-gray;
 	background: $main-back;
-	position: relative;
-	padding-bottom: 50rem;
 	@include respond(mobile) {
 		background-color: red;
 	}
+}
+
+.container {
+	position: relative;
 }

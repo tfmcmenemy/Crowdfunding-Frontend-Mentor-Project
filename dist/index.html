@@ -6,30 +6,26 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
-
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/styles.8206c151.css">
 		<script src="/main.67ffc892.js" defer=""></script>
 
 		<title>Frontend Mentor | Crowdfunding product page</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}</style>
 	<script src="/styles.8206c151.js"></script></head>
 	<body>
 		<div class="header">
-			<div class="header__image"></div>
-			<div class="header__menu">
-				<ul>
-					<li>About</li>
-					<li>Discover</li>
-					<li>Get Started</li>
-				</ul>
+			<div class="header_box">
+				<div class="header_box__image">
+					<img src="/logo.236e4034.svg" alt="">
+				</div>
+				<div class="header_box__menu">
+					<ul>
+						<li>About</li>
+						<li>Discover</li>
+						<li>Get Started</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -109,7 +105,7 @@
 		</div>
 
 		<!-- Selection modal start -->
-		<div class="selection_modal">
+		<div class="selection_modal modal">
 			<div class="selection_modal__title">Back this project</div>
 
 			<div class="selection_modal__content">
@@ -147,7 +143,7 @@
 					<!-- Selected pledge end -->
 				</div>
 
-				<div class="selection_modal__card">
+				<div class="selection_modal__card modal">
 					<div class="selection_modal__card__title">
 						Black Edition Stand
 					</div>
@@ -168,7 +164,7 @@
   Continue -->
 					<!-- Selected pledge end -->
 				</div>
-				<div class="selection_modal__card">
+				<div class="selection_modal__card modal">
 					<div class="selection_modal__card__title">
 						Mahogany Special Edition
 					</div>
@@ -194,7 +190,7 @@
 		<!-- Selection modal end -->
 
 		<!-- Success modal start -->
-		<div class="success_modal">
+		<div class="success_modal modal">
 			<div class="success_modal__title">Thanks for your support!</div>
 			<div class="success_modal__content">
 				Your pledge brings us one step closer to sharing Mastercraft

@@ -1,60 +1,29 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 @mixin center_horizontally_and_vertically {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-//Media Query Manager
-
-/*
-000px - 600px   Phone
-600px - 900px   Tablet
-900px - 1200px  Tablet Landscape
-[1200 - 18000px is where our regular styling will go]
-1800px +        Big Screens
-
-Breakpoint argument choices:
-
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-1em = 16px
-*/
-
 @mixin respond($breakpoint) {
-    @if $breakpoint==phone {
-        @media only screen and (max-width: 37.5em) {
-            // 600px
-            @content;
-        }
-    }
-    @if $breakpoint==tab-port {
-        @media only screen and (max-width: 56.25em) {
-            // 900px
-            @content;
-        }
-    }
-    @if $breakpoint==tab-land {
-        @media only screen and (max-width: 75em) {
-            // 1200px
-            @content;
-        }
-    }
-    @if $breakpoint==big-desktop {
-        @media only screen and (min-width: 112.5em) {
-            // 1800px
-            @content;
-        }
-    }
+	@if $breakpoint==mobile {
+		@media only screen and (max-width: 23.44em) {
+			// 375px
+			@content;
+		}
+	}
+	@if $breakpoint==desktop {
+		@media only screen and (max-width: 90em) {
+			// 1440px
+			@content;
+		}
+	}
 }

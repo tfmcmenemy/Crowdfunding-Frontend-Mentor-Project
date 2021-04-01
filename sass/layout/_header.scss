@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.header {
+	width: 100vw;
+	height: 46vh;
+	background-image: url("/images/image-hero-desktop.jpg");
+
+	&_box {
+		height: 35%;
+		width: 100%;
+		// background-color: red;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__image {
+			margin-left: 10vw;
+
+			img {
+				transform: scale(1.5);
+			}
+		}
+
+		ul {
+			display: flex;
+			list-style: none;
+			margin-right: 8vw;
+
+			li {
+				padding: 0 2.5rem;
+				color: $main-back;
+				font-size: 2rem;
+				font-weight: $font-weight-thick;
+				white-space: nowrap;
+				transition: 0.5s ease;
+
+				&:hover {
+					color: $dark-cyan;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

@@ -2,3 +2,7 @@ node_modules
 showTypeParameters
 .prettierignore
 STARTER
+.DS_Store
+.cache
+dist
+.vscode

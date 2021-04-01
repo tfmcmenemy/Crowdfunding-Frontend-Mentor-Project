@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  height: 46vh;
+  background-image: url("/images/image-hero-desktop.jpg");
+}
+.header_box {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_box__image {
+  margin-left: 10vw;
+}
+.header_box__image img {
+  transform: scale(1.5);
+}
+.header_box ul {
+  display: flex;
+  list-style: none;
+  margin-right: 8vw;
+}
+.header_box ul li {
+  padding: 0 2.5rem;
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+}

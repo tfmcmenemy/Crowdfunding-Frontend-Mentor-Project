@@ -1,0 +1,66 @@
+.main_content {
+  position: absolute;
+  top: 38vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  display: block;
+  background: rgba(0, 0, 0, 0);
+}
+.main_content > div:not(:last-child) {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.03);
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 0.4rem;
+  padding: 4rem;
+}
+.main_content .foot_box {
+  position: absolute;
+  left: 0;
+  bottom: -6rem;
+  height: 1rem;
+  width: 100%;
+}
+.main_content .title_box {
+  position: relative;
+}
+.main_content .title_box > div:not(:first-child) {
+  margin-top: 2rem;
+}
+.main_content .title_box__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-bottom: 0;
+}
+.main_content .title_box__content {
+  text-align: center;
+}
+.main_content .title_box_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2rem;
+}
+.main_content .title_box_options__bookmark {
+  position: relative;
+  height: 100%;
+}
+.main_content .title_box_options__bookmark .icon {
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: red;
+}
+.main_content .title_box__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

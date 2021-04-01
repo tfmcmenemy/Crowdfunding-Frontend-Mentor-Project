@@ -4,5 +4,5 @@ showTypeParameters
 STARTER
 .DS_Store
 .cache
-dist
+# dist
 .vscode

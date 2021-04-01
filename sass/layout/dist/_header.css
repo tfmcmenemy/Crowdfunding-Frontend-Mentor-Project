@@ -1,0 +1,42 @@
+.header {
+  width: 100vw;
+  height: 46vh;
+  background-image: url("/images/image-hero-desktop.jpg");
+}
+.header_box {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_box__image {
+  margin-left: 10vw;
+}
+.header_box__image img {
+  transform: scale(1.5);
+}
+.header_box ul {
+  display: flex;
+  list-style: none;
+  margin-right: 8vw;
+}
+.header_box ul li {
+  padding: 0 1.5rem;
+  margin: 0 2rem;
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+  background: linear-gradient(135deg, #147b74 50%, transparent 50%);
+  background-size: 0%;
+  background-repeat: no-repeat;
+}
+.header_box ul li:hover {
+  transform: scale(1.1);
+  background-size: 300%;
+  color: white;
+  cursor: pointer;
+}
